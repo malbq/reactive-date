@@ -1,0 +1,10 @@
+.App {
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(3, 1fr);
+  gap: 1rem;
+
+  > :first-child,
+  > :last-child {
+    grid-column: 1 / span 3;
+  }
+}

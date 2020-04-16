@@ -1,0 +1,59 @@
+.dateBlock {
+  position: relative;
+  border: 3px solid #9eb7da;
+  border-radius: 6px;
+  padding: 0.2em 0.25em;
+  font-size: 32px;
+  text-align: center;
+
+  &Label {
+    position: absolute;
+    left: 4px;
+    top: -10px;
+    background-color: #c4d4e9;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
+.flash::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg,
+    transparent 40%,
+    #9eb7da 50%,
+    transparent 60%);
+  background-size: 250% 250%;
+  animation: flash 500ms ease-out;
+
+}
+.red::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg,
+    transparent 40%,
+    #da9e9e 50%,
+    transparent 60%);
+  background-size: 250% 250%;
+  animation: flash 500ms ease-out;
+}
+
+@keyframes flash {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
