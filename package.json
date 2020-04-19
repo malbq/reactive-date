@@ -2,6 +2,7 @@
   "name": "react-calendar",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maurogadelha.github.io/reactive-date/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
