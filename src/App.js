@@ -5,7 +5,7 @@ import styles from './App.module.scss'
 
 function App() {
   return (
-    <div className={styles.App} data-testid="App">
+    <div className={styles.App} data-testid="app">
       <Date />
       <Day />
       <Month />

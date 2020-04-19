@@ -22,6 +22,7 @@ export default function Date() {
       className={classNames(styles.dateBlock, {
         [styles.flash]: flash,
       })}
+      data-testid="date"
     >
       <span className={styles.dateBlockLabel}>Full Date</span>
       {`${date.day}/${date.month}/${date.year}`}
@@ -45,6 +46,7 @@ export function Day() {
       className={classNames(styles.dateBlock, {
         [styles.flash]: flash,
       })}
+      data-testid="day"
     >
       <span className={styles.dateBlockLabel}>Day</span>
       {day}
@@ -68,6 +70,7 @@ export function Month() {
       className={classNames(styles.dateBlock, {
         [styles.flash]: flash,
       })}
+      data-testid="month"
     >
       <span className={styles.dateBlockLabel}>Month</span>
       {month}
@@ -91,6 +94,7 @@ export function Year() {
       className={classNames(styles.dateBlock, {
         [styles.flash]: flash,
       })}
+      data-testid="year"
     >
       <span className={styles.dateBlockLabel}>Year</span>
       {year}

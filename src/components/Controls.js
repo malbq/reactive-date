@@ -33,6 +33,7 @@ export default function Controls() {
           type="button"
           onClick={onDayClick}
           title="Generate random day"
+          data-testid="dayButton"
         >
           <FaDice />
           Day
@@ -41,6 +42,7 @@ export default function Controls() {
           type="button"
           onClick={onMonthClick}
           title="Generate random month"
+          data-testid="monthButton"
         >
           <FaDice />
           Month
@@ -49,6 +51,7 @@ export default function Controls() {
           type="button"
           onClick={onYearClick}
           title="Generate random year"
+          data-testid="yearButton"
         >
           <FaDice />
           Year
